@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "User": {
+      "title": "User Profile",
+      "description": "Stores user profile information and overall progress.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "lastUpdated": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email"]
+    },
+    "StudyProgress": {
+      "title": "Study Progress",
+      "description": "Stores the list of completed topic IDs for a user.",
+      "type": "object",
+      "properties": {
+        "completedTopicIds": {
+          "type": "array",
+          "items": { "type": "integer" }
+        },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["completedTopicIds"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profile documents."
+    },
+    "/users/{userId}/progress/current": {
+      "schema": "StudyProgress",
+      "description": "The current study progress for the user."
+    }
+  }
+}

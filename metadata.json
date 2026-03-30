@@ -1,0 +1,5 @@
+{
+  "name": "Medicine Study Tracker",
+  "description": "A comprehensive study tracker for internal medicine with Google Sign-in and real-time progress syncing.",
+  "requestFramePermissions": []
+}
