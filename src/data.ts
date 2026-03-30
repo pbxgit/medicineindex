@@ -137,7 +137,7 @@ export const topics: Topic[] = [
   {sno: 129, system: "", title: "Pleural Effusion", duration: "55:21"},
   {sno: 130, system: "", title: "Pneumothorax", duration: "43:21"},
   {sno: 131, system: "", title: "Flow Volume Curve, Spirometry and DLCO", duration: "38:06"},
-  {sno: 132, system: "ABG Analysis Simplified Part 1", title: "ABG Analysis Simplified Part 1", duration: "1:06:58"},
+  {sno: 132, system: "", title: "ABG Analysis Simplified Part 1", duration: "1:06:58"},
   {sno: 133, system: "", title: "ABG Analysis Simplified Part 2", duration: "46:51"},
   {sno: 134, system: "", title: "ABG Analysis Simplified Part 3", duration: "31:15"},
   {sno: 135, system: "Infections", title: "Fever of Unknown Origin", duration: "40:23"},
